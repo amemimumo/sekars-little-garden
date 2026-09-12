@@ -35,7 +35,7 @@ body {
         rgba(0,0,0,0.35)
     ),
 
-    background-image: url("garden-background.jpg");
+    url("garden-background.jpg");
 
 
     background-size: cover;
