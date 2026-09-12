@@ -2127,3 +2127,19 @@ LETTER SYSTEM CLEAN
     color:#75645c;
 
 }
+.opening {
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url("garden-background.jpg") !important;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
