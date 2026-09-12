@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sekar's Little Garden</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<audio 
+id="backgroundMusic"
+loop>
+
+    <source 
+    src="assets/audio/sekar-song.mp3"
+    type="audio/mp3">
+
+</audio>
+
+<button id="musicToggle">
+
+🔊
+
+</button>
+
+<section class="opening">
+
+
+    <div class="petals">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <div class="light-particles">
+    </div>
+
+
+    <div class="opening-content">
+
+
+        <h1>
+            A Little Garden For Sekar
+        </h1>
+
+
+        <p>
+            A place grown from memories, wishes, and love.
+        </p>
+
+        <button class="enter-button" id="enterGarden">
+
+    Enter The Garden 🌸
+
+</button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<section class="birthday-meadow">
+
+
+    <div class="meadow-content">
+        <div class="flower-decoration">
+    🌸 🌼 🌷
+</div>
+
+
+        <div class="photo-frame">
+
+            <img 
+            src="assets/images/birthday-photo.jpg"
+            alt="A memory together">
+
+        </div>
+<div class="memory-note">
+
+    A little memory,
+    kept safe in this garden 🌷
+
+</div>
+
+        <h2>
+            Happy 27th Birthday, Sekar 🌸
+        </h2>
+
+
+        <p>
+            Even from far away,
+            I hope this little garden reminds you
+            how loved you are.
+        </p>
+        
+        <button 
+class="memory-button"
+id="memoryGardenButton">
+
+Explore The Memories 🌷
+
+</button>
+
+
+    </div>
+
+
+</section>
+
+<section class="memory-garden">
+    <div class="garden-glow"></div>
+
+
+    <div class="garden-title">
+
+        <h2>
+            A Garden Of Memories 🌷
+        </h2>
+
+        <p>
+            Every flower holds a little piece of us.
+        </p>
+
+        <span class="garden-hint">
+Click a flower to reveal a memory 🌷
+</span>
+
+    </div>
+<div class="sparkles"></div>
+
+    <div class="flowers">
+
+
+        <div 
+        class="flower flower-1"
+        data-image="memory-01.jpg"
+        data-text="Flowers are your bestfriend.">
+
+
+            <img 
+            src="assets/images/flowers/flower-01.png"
+            alt="memory flower">
+
+
+        </div>
+
+
+
+
+        <div 
+        class="flower flower-2"
+        data-image="memory-02.jpg"
+        data-text="Back when you're a commonner like us, not using a macbook lol.">
+
+
+            <img 
+            src="assets/images/flowers/flower-02.png"
+            alt="memory flower">
+
+
+        </div>
+
+
+
+
+        <div 
+        class="flower flower-3"
+        data-image="memory-03.jpg"
+        data-text="Ah, best apple pie we ever eat!">
+
+
+            <img 
+            src="assets/images/flowers/flower-03.png"
+            alt="memory flower">
+
+
+        </div>
+
+        <div 
+class="flower flower-4"
+data-image="memory-04.jpg"
+data-text="Thought you looked very cute here hehe.">
+
+    <img 
+    src="assets/images/flowers/flower-04.png">
+
+</div>
+
+<div 
+class="flower flower-5"
+data-image="memory-05.jpg"
+data-text="Look at you, not wearing helmet, ckckck.">
+
+<img src="assets/images/flowers/flower-05.png">
+
+</div>
+
+<div 
+class="flower flower-6"
+data-image="memory-06.jpg"
+data-text="DM = Uniqlo.">
+
+<img src="assets/images/flowers/flower-06.png">
+
+</div>
+
+<div 
+class="flower flower-7"
+data-image="memory-07.jpg"
+data-text="To light up the candles on your birthday cake wohoo.">
+
+<img src="assets/images/flowers/flower-07.png">
+
+</div>
+
+<div 
+class="flower flower-8"
+data-image="memory-08.jpg"
+data-text="This could be a meme.">
+
+<img src="assets/images/flowers/flower-08.png">
+
+</div>
+
+    </div>
+
+
+
+    <div class="memory-display">
+
+
+        <img id="memoryImage">
+
+
+        <p id="memoryText">
+
+        </p>
+
+
+    </div>
+
+<button 
+class="garden-next-button"
+id="openLetters">
+
+    Continue to the Letters ✉️
+
+</button>
+</section>
+
+<section class="final-garden">
+
+
+    <div class="final-title">
+
+        <h2>
+            A Little Something For You 🌷
+        </h2>
+
+        <p>
+            Two letters, written with love.
+        </p>
+
+    </div>
+
+
+    <div class="letters-container">
+
+
+       <div class="letter-card" data-letter="one">
+
+
+    <div class="envelope">
+
+        <div class="paper">
+
+            <h2 id="paperTitle"></h2>
+
+            <p id="paperContent"></p>
+
+        </div>
+
+
+        💌
+
+    </div>
+
+
+    <h3>
+        From Rara
+    </h3>
+
+
+</div>
+
+
+
+        <div class="letter-card" data-letter="two">
+
+            <div class="envelope">
+                💌
+            </div>
+
+            <h3>
+                From Ame
+            </h3>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="opened-letter">
+
+        <h2 id="letterTitle"></h2>
+
+        <p id="letterContent"></p>
+
+    </div>
+
+
+</section>
+<section class="closing-section">
+
+    <div class="closing-content">
+
+        <div class="closing-flower">
+            🌷
+        </div>
+
+        <h2>
+            The Garden May End Here
+        </h2>
+
+        <p>
+            But the memories don't.
+        </p>
+
+        <div class="closing-message">
+
+            <p>
+                Happy 27th Birthday, Sekar.
+            </p>
+
+            <p>
+                I hope this little garden reminds you
+                of how loved you are.
+            </p>
+
+            <p class="closing-signature">
+                With love,<br>
+                Rara & Ame ♡
+            </p>
+
+        </div>
+
+        <button
+            class="return-garden-button"
+            id="returnGarden">
+
+            Return to the Garden 🌷
+
+        </button>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
