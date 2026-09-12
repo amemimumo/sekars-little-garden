@@ -110,7 +110,7 @@ flowers.forEach((flower) => {
 
 
             memoryImage.src =
-                "assets/images/memory/" + image;
+image;
 
 
             memoryText.innerHTML = text;
